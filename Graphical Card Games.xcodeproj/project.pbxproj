@@ -31,6 +31,9 @@
 		CB977967173400C900E6706B /* SetCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97795C173400C900E6706B /* SetCardDeck.m */; };
 		CB977968173400C900E6706B /* SetCardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97795E173400C900E6706B /* SetCardGame.m */; };
 		CB977969173400C900E6706B /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = CB977960173400C900E6706B /* Settings.m */; };
+		CBAB8C441735644F00BDFDD0 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB8C431735644F00BDFDD0 /* CardGameViewController.m */; };
+		CBAB8C47173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */; };
+		CBAB8C4A17356BCC00BDFDD0 /* TSPlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,12 @@
 		CB97795E173400C900E6706B /* SetCardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCardGame.m; sourceTree = "<group>"; };
 		CB97795F173400C900E6706B /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		CB977960173400C900E6706B /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		CBAB8C421735644F00BDFDD0 /* CardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
+		CBAB8C431735644F00BDFDD0 /* CardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
+		CBAB8C45173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlayingCardCollectionViewCell.h; sourceTree = "<group>"; };
+		CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayingCardCollectionViewCell.m; sourceTree = "<group>"; };
+		CBAB8C4817356BCC00BDFDD0 /* TSPlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlayingCardGameViewController.h; sourceTree = "<group>"; };
+		CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayingCardGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +133,16 @@
 				CB9779301733DE3A00E6706B /* TSAppDelegate.h */,
 				CB9779311733DE3A00E6706B /* TSAppDelegate.m */,
 				CB9779391733DE3A00E6706B /* MainStoryboard.storyboard */,
+				CBAB8C45173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.h */,
+				CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */,
 				CB97793C1733DE3A00E6706B /* TSViewController.h */,
 				CB97793D1733DE3A00E6706B /* TSViewController.m */,
 				CB9779441733DE5F00E6706B /* TSPlayingCardView.h */,
 				CB9779451733DE5F00E6706B /* TSPlayingCardView.m */,
+				CBAB8C421735644F00BDFDD0 /* CardGameViewController.h */,
+				CBAB8C431735644F00BDFDD0 /* CardGameViewController.m */,
+				CBAB8C4817356BCC00BDFDD0 /* TSPlayingCardGameViewController.h */,
+				CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */,
 				CB9779281733DE3A00E6706B /* Supporting Files */,
 			);
 			path = "Graphical Card Games";
@@ -265,6 +280,9 @@
 				CB977967173400C900E6706B /* SetCardDeck.m in Sources */,
 				CB977968173400C900E6706B /* SetCardGame.m in Sources */,
 				CB977969173400C900E6706B /* Settings.m in Sources */,
+				CBAB8C441735644F00BDFDD0 /* CardGameViewController.m in Sources */,
+				CBAB8C47173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m in Sources */,
+				CBAB8C4A17356BCC00BDFDD0 /* TSPlayingCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +405,7 @@
 				CB9779431733DE3A00E6706B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
