@@ -16,6 +16,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="357"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qjI-ix-uEj">
                                     <size key="itemSize" width="70" height="91"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -46,6 +47,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="bgA-PL-QjK" id="Fq0-j6-Qn0"/>
+                                    <outletCollection property="gestureRecognizers" destination="0Ql-Dz-KWh" appends="YES" id="34Y-EV-R1d"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Azi-1q-2wx">
@@ -76,6 +78,11 @@
                     <tabBarItem key="tabBarItem" title="Set!" id="PaQ-o7-Cg3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59i-H8-qId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0Ql-Dz-KWh">
+                    <connections>
+                        <action selector="flipCard:" destination="bgA-PL-QjK" id="HrQ-hb-Flo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="901" y="532"/>
         </scene>

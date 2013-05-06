@@ -15,7 +15,7 @@
 
 - (NSUInteger)startingCardCount
 {
-    return 20;
+    return 22;
 }
 
 - (Deck *)createDeck
