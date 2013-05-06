@@ -13,9 +13,6 @@
 
 @implementation TSPlayingCardGameViewController
 
-#define UNPLAYABLE_CARD_ALPHA 0.3
-#define PLAYABLE_CARD_ALPHA 1.0
-
 - (NSUInteger)startingCardCount
 {
     return 20;

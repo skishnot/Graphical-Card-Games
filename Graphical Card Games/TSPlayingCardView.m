@@ -10,12 +10,6 @@
 
 @implementation TSPlayingCardView
 
-#define CARD_CORNER_RADIUS 17.0
-#define CARD_CORNER_FONTSIZE 0.20
-#define CARD_BOUNDS_ORIGIN 2.0
-
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
@@ -31,7 +25,7 @@
     if (self.isFaceUp) {
         [self drawCorners];
     } else {
-        [[UIImage imageNamed:@"RedCardBack.png"] drawInRect:self.bounds];
+        [[UIImage imageNamed:CARD_BACK_IMAGE] drawInRect:self.bounds];
     }
 }
 

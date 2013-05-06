@@ -34,6 +34,9 @@
 		CBAB8C441735644F00BDFDD0 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB8C431735644F00BDFDD0 /* CardGameViewController.m */; };
 		CBAB8C47173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */; };
 		CBAB8C4A17356BCC00BDFDD0 /* TSPlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */; };
+		CBE4CA741737CB8B004FC315 /* TSSetCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE4CA731737CB8B004FC315 /* TSSetCardGameViewController.m */; };
+		CBE4CA771737CC89004FC315 /* TSSetCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE4CA761737CC89004FC315 /* TSSetCardView.m */; };
+		CBE4CA7D1737D8F1004FC315 /* TSSetCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE4CA7C1737D8F0004FC315 /* TSSetCardCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +85,13 @@
 		CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayingCardCollectionViewCell.m; sourceTree = "<group>"; };
 		CBAB8C4817356BCC00BDFDD0 /* TSPlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlayingCardGameViewController.h; sourceTree = "<group>"; };
 		CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayingCardGameViewController.m; sourceTree = "<group>"; };
+		CBE4CA721737CB8B004FC315 /* TSSetCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSetCardGameViewController.h; sourceTree = "<group>"; };
+		CBE4CA731737CB8B004FC315 /* TSSetCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSetCardGameViewController.m; sourceTree = "<group>"; };
+		CBE4CA751737CC89004FC315 /* TSSetCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSetCardView.h; sourceTree = "<group>"; };
+		CBE4CA761737CC89004FC315 /* TSSetCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSetCardView.m; sourceTree = "<group>"; };
+		CBE4CA7A1737D098004FC315 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CBE4CA7B1737D8F0004FC315 /* TSSetCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSetCardCollectionViewCell.h; sourceTree = "<group>"; };
+		CBE4CA7C1737D8F0004FC315 /* TSSetCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSetCardCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,19 +140,16 @@
 			children = (
 				CB97794E173400C900E6706B /* Model */,
 				CB9779471733FF3000E6706B /* Images */,
+				CBE4CA7A1737D098004FC315 /* Constants.h */,
 				CB9779301733DE3A00E6706B /* TSAppDelegate.h */,
 				CB9779311733DE3A00E6706B /* TSAppDelegate.m */,
 				CB9779391733DE3A00E6706B /* MainStoryboard.storyboard */,
-				CBAB8C45173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.h */,
-				CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */,
+				CBE4CA7E1737D8FA004FC315 /* Playing Card Game */,
+				CBE4CA7F1737D908004FC315 /* Set Card Game */,
 				CB97793C1733DE3A00E6706B /* TSViewController.h */,
 				CB97793D1733DE3A00E6706B /* TSViewController.m */,
-				CB9779441733DE5F00E6706B /* TSPlayingCardView.h */,
-				CB9779451733DE5F00E6706B /* TSPlayingCardView.m */,
 				CBAB8C421735644F00BDFDD0 /* CardGameViewController.h */,
 				CBAB8C431735644F00BDFDD0 /* CardGameViewController.m */,
-				CBAB8C4817356BCC00BDFDD0 /* TSPlayingCardGameViewController.h */,
-				CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */,
 				CB9779281733DE3A00E6706B /* Supporting Files */,
 			);
 			path = "Graphical Card Games";
@@ -195,6 +202,32 @@
 				CB977960173400C900E6706B /* Settings.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CBE4CA7E1737D8FA004FC315 /* Playing Card Game */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB8C45173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.h */,
+				CBAB8C46173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m */,
+				CB9779441733DE5F00E6706B /* TSPlayingCardView.h */,
+				CB9779451733DE5F00E6706B /* TSPlayingCardView.m */,
+				CBAB8C4817356BCC00BDFDD0 /* TSPlayingCardGameViewController.h */,
+				CBAB8C4917356BCC00BDFDD0 /* TSPlayingCardGameViewController.m */,
+			);
+			name = "Playing Card Game";
+			sourceTree = "<group>";
+		};
+		CBE4CA7F1737D908004FC315 /* Set Card Game */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4CA7B1737D8F0004FC315 /* TSSetCardCollectionViewCell.h */,
+				CBE4CA7C1737D8F0004FC315 /* TSSetCardCollectionViewCell.m */,
+				CBE4CA751737CC89004FC315 /* TSSetCardView.h */,
+				CBE4CA761737CC89004FC315 /* TSSetCardView.m */,
+				CBE4CA721737CB8B004FC315 /* TSSetCardGameViewController.h */,
+				CBE4CA731737CB8B004FC315 /* TSSetCardGameViewController.m */,
+			);
+			name = "Set Card Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +316,9 @@
 				CBAB8C441735644F00BDFDD0 /* CardGameViewController.m in Sources */,
 				CBAB8C47173567DF00BDFDD0 /* TSPlayingCardCollectionViewCell.m in Sources */,
 				CBAB8C4A17356BCC00BDFDD0 /* TSPlayingCardGameViewController.m in Sources */,
+				CBE4CA741737CB8B004FC315 /* TSSetCardGameViewController.m in Sources */,
+				CBE4CA771737CC89004FC315 /* TSSetCardView.m in Sources */,
+				CBE4CA7D1737D8F1004FC315 /* TSSetCardCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
