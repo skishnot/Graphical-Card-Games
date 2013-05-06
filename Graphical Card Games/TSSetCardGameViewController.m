@@ -34,7 +34,8 @@
             setCardView.number = setCard.number;
             setCardView.shading = setCard.shading;
             setCardView.stylizedContents = setCard.stylizedContents;
-            setCardView.alpha = setCard.isUnplayable ? UNPLAYABLE_CARD_ALPHA : PLAYABLE_CARD_ALPHA;
+            setCardView.alpha = setCard.isFaceUp ? UNPLAYABLE_CARD_ALPHA : PLAYABLE_CARD_ALPHA;
+//            setCardView.alpha = setCard.isUnplayable ? UNPLAYABLE_CARD_ALPHA : PLAYABLE_CARD_ALPHA;
         }
     }
 }

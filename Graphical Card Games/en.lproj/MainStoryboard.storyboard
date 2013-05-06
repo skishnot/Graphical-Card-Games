@@ -76,6 +76,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set!" id="PaQ-o7-Cg3"/>
+                    <connections>
+                        <outlet property="cardCollectionView" destination="apj-Al-Nk7" id="s7q-i2-Wre"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59i-H8-qId" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="0Ql-Dz-KWh">
