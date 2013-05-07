@@ -7,11 +7,27 @@
 //
 
 #import "TSSetCardGameViewController.h"
+#import "TSSetCardCollectionViewCell.h"
 #import "SetCard.h"
 #import "SetCardDeck.h"
-#import "TSSetCardCollectionViewCell.h"
+#import "SetCardGame.h"
+
+@interface TSSetCardGameViewController()
+
+@property (strong, nonatomic) CardGame *game;
+
+@end
 
 @implementation TSSetCardGameViewController
+
+@synthesize game = _game;
+
+- (CardGame *)game
+{
+    if (!_game) _game = [[SetCardGame alloc] initWithCardCount:self.startingCardCount
+                                                  usingDeck:[self createDeck]];
+    return _game;
+}
 
 - (NSUInteger)startingCardCount
 {

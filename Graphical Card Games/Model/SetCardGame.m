@@ -53,6 +53,7 @@
                             card3.unplayable = YES;
                             int score = matchScore * MATCH_BONUS;
                             self.score += score;
+                            NSLog(@"It's a match! Won %d points", score);
                             
                             // create a result
                             self.stylizedFlipResult = [self assembleFlipResult:@[@"match", card3, card2, card1, [NSNumber numberWithInt:(score)]]];
@@ -62,6 +63,7 @@
                             card2.faceUp = NO;
                             card3.faceUp = NO;
                             self.score -= MISMATCH_PENALTY;
+                            NSLog(@"It's not a match :(");
                             self.stylizedFlipResult = [self assembleFlipResult:@[@"not a match", card3, card2, card1, @(MISMATCH_PENALTY)]];
                         }
                         // break for-loop if the third card is found.

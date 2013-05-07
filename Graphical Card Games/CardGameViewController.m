@@ -7,12 +7,11 @@
 //
 
 #import "CardGameViewController.h"
-#import "CardGame.h"
 
 @interface CardGameViewController () <UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipcount;
-@property (strong, nonatomic) CardGame *game;
+@property (strong, nonatomic, readwrite) CardGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipResultLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gameLogicController;
